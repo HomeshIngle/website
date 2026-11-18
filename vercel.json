@@ -1,18 +1,4 @@
 {
-  "version": 2,
-  "name": "foodrescue",
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -22,19 +8,6 @@
         { "key": "X-XSS-Protection", "value": "1; mode=block" },
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
-    },
-    {
-      "source": "/style.css",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
-    },
-    {
-      "source": "/app.js",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
     }
   ]
 }
-
