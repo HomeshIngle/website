@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodRescue – Rescue Food. Fight Hunger.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- =========== NAVBAR =========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <span class="logo-icon">🍱</span>
+      <span class="logo-text">FoodRescue</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#register" class="btn btn-outline">Sign Up</a>
+      <a href="#login" class="btn btn-primary">Login</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- =========== HERO =========== -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <span class="badge">🌱 Making Pune Hunger-Free</span>
+      <h1>Rescue Food.<br/>Fight Hunger.<br/><span class="accent">Save the Planet.</span></h1>
+      <p>FoodRescue connects restaurants, cafes &amp; hostels with nearby NGOs and volunteers to ensure surplus food reaches people — not the bin.</p>
+      <div class="hero-cta">
+        <a href="#register" class="btn btn-primary btn-lg">Donate Surplus Food</a>
+        <a href="#register" class="btn btn-secondary btn-lg">Volunteer / NGO</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>70+</strong>
+          <span>Users Interviewed</span>
+        </div>
+        <div class="stat">
+          <strong>42</strong>
+          <span>Confirmed Need</span>
+        </div>
+        <div class="stat">
+          <strong>Pune</strong>
+          <span>Starting Here</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card floating">
+        <div class="card-header">
+          <span class="status-dot green"></span>
+          <span>Live Donation</span>
+        </div>
+        <div class="food-item">
+          <span class="food-emoji">🍛</span>
+          <div>
+            <strong>Dal Rice – 20 portions</strong>
+            <p>Sharma's Dhaba · 0.4 km away</p>
+          </div>
+        </div>
+        <div class="food-item">
+          <span class="food-emoji">🥗</span>
+          <div>
+            <strong>Mixed Salad – 15 portions</strong>
+            <p>Green Leaf Café · 1.1 km away</p>
+          </div>
+        </div>
+        <div class="food-item">
+          <span class="food-emoji">🍞</span>
+          <div>
+            <strong>Bread Loaves – 8 pcs</strong>
+            <p>City Bakery · 0.8 km away</p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="showAlert('Pickup request sent!')">Request Pickup</button>
+      </div>
+    </div>
+  </div>
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f9fafb"/>
+    </svg>
+  </div>
+</section>
+
+<!-- =========== HOW IT WORKS =========== -->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-green">Simple Process</span>
+      <h2>How FoodRescue Works</h2>
+      <p>Three simple steps to rescue food and feed someone in need.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">01</div>
+        <div class="step-icon">📋</div>
+        <h3>List Surplus Food</h3>
+        <p>Restaurants, cafes and hostels list their surplus food on the platform in just a few taps — quantity, type, and pickup time.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card">
+        <div class="step-number">02</div>
+        <div class="step-icon">📍</div>
+        <h3>Location-Based Match</h3>
+        <p>Our platform uses Google Maps to instantly match donors with nearby NGOs and volunteers who can collect the food.</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step-card">
+        <div class="step-number">03</div>
+        <div class="step-icon">🔔</div>
+        <h3>Real-Time Pickup</h3>
+        <p>NGOs and volunteers get real-time notifications and collect the food before it goes to waste — fast and simple.</p>
+      </div>
+    </div>
+    <div class="impact-track">
+      <div class="track-item">
+        <span class="track-icon">📊</span>
+        <div>
+          <strong>Impact Dashboard</strong>
+          <p>See how many meals you've rescued and your environmental impact in real time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== FEATURES =========== -->
+<section class="section section-dark" id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-orange">Platform Features</span>
+      <h2>Everything You Need</h2>
+      <p>Built with React.js, Node.js, MySQL &amp; Google Maps API for a seamless experience.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🗺️</div>
+        <h3>Location-Based Matching</h3>
+        <p>Google Maps integration finds the nearest NGOs and volunteers to your surplus food instantly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔔</div>
+        <h3>Real-Time Notifications</h3>
+        <p>Instant alerts ensure food is collected before it's wasted — no delays, no missed opportunities.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Impact Dashboard</h3>
+        <p>Track meals rescued, CO₂ saved, and your contribution to the community with beautiful metrics.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <h3>NGO & Volunteer Network</h3>
+        <p>Connect directly with verified NGOs and volunteers across Pune ready to collect and distribute.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📱</div>
+        <h3>Web & Mobile</h3>
+        <p>Works on any device — desktop, tablet, or mobile. No special app required to get started.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>Food Safety Guidance</h3>
+        <p>Built-in food safety and hygiene guidelines so donors and receivers handle food responsibly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== IMPACT NUMBERS =========== -->
+<section class="section impact-section" id="impact">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-green">Our Impact</span>
+      <h2>Making a Real Difference</h2>
+      <p>Every rescue counts. Here's what we're building toward in Pune.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-emoji">🍽️</div>
+        <div class="impact-number counter" data-target="548">0</div>
+        <div class="impact-label">Meals Targeted<br/>(Year 1)</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-emoji">🏪</div>
+        <div class="impact-number counter" data-target="74">0</div>
+        <div class="impact-label">Partner Restaurants<br/>(Month 12)</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-emoji">🤝</div>
+        <div class="impact-number counter" data-target="70">0</div>
+        <div class="impact-label">Users<br/>Interviewed</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-emoji">💚</div>
+        <div class="impact-number">100%</div>
+        <div class="impact-label">Viability<br/>Index</div>
+      </div>
+    </div>
+    <div class="market-banner">
+      <div class="market-item">
+        <strong>₹2.5 Crore</strong>
+        <span>Obtainable Market (SOM)</span>
+      </div>
+      <div class="market-divider"></div>
+      <div class="market-item">
+        <strong>\$300M</strong>
+        <span>Serviceable Market (SAM)</span>
+      </div>
+      <div class="market-divider"></div>
+      <div class="market-item">
+        <strong>\$1B+</strong>
+        <span>Total Market (TAM)</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== WHO WE SERVE =========== -->
+<section class="section" id="segments">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-orange">Who We Serve</span>
+      <h2>Built for Donors &amp; Receivers</h2>
+    </div>
+    <div class="segment-grid">
+      <div class="segment-card donor">
+        <div class="segment-icon">🍴</div>
+        <h3>Food Donors</h3>
+        <p>Restaurants, cafes, hostels and canteens in Pune with daily surplus food</p>
+        <ul>
+          <li>✅ List surplus food in minutes</li>
+          <li>✅ Reduce food disposal costs</li>
+          <li>✅ Earn goodwill & recognition</li>
+          <li>✅ Food safety compliance</li>
+        </ul>
+        <a href="#register" class="btn btn-primary">Register as Donor</a>
+      </div>
+      <div class="segment-card receiver">
+        <div class="segment-icon">🤝</div>
+        <h3>NGOs &amp; Volunteers</h3>
+        <p>NGOs, volunteers and community helpers who distribute food to those in need</p>
+        <ul>
+          <li>✅ Get real-time food alerts</li>
+          <li>✅ Location-based matches</li>
+          <li>✅ Track your impact</li>
+          <li>✅ Free to join</li>
+        </ul>
+        <a href="#register" class="btn btn-secondary">Join as Volunteer / NGO</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== PRICING =========== -->
+<section class="section section-dark" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-orange">Simple Pricing</span>
+      <h2>Affordable for Every Business</h2>
+      <p>Food businesses subscribe monthly. NGOs and volunteers join for free.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-badge">Free</div>
+        <div class="pricing-price">₹0 <span>/month</span></div>
+        <h3>NGO / Volunteer</h3>
+        <ul>
+          <li>✅ Real-time food alerts</li>
+          <li>✅ Location-based matching</li>
+          <li>✅ Impact tracking</li>
+          <li>✅ Community support</li>
+        </ul>
+        <a href="#register" class="btn btn-secondary">Join Free</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-badge popular">Most Popular</div>
+        <div class="pricing-price">₹499 <span>/month</span></div>
+        <h3>Restaurant / Business</h3>
+        <ul>
+          <li>✅ Surplus food listing</li>
+          <li>✅ Donor dashboard</li>
+          <li>✅ Location matching</li>
+          <li>✅ Impact reports</li>
+          <li>✅ Food safety guidelines</li>
+          <li>✅ Priority support</li>
+        </ul>
+        <a href="#register" class="btn btn-primary">Start Donating</a>
+        <p class="pricing-note">First profitable month: Month 4 🎉</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== REGISTER / SIGN UP FORM =========== -->
+<section class="section register-section" id="register">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-green">Get Started</span>
+      <h2>Join FoodRescue Today</h2>
+      <p>Be part of Pune's food rescue movement. Sign up takes less than 2 minutes.</p>
+    </div>
+    <div class="form-container">
+      <div class="form-tabs">
+        <button class="tab-btn active" onclick="switchTab('donor')">🍴 I'm a Food Donor</button>
+        <button class="tab-btn" onclick="switchTab('ngo')">🤝 I'm an NGO / Volunteer</button>
+      </div>
+
+      <!-- Donor Form -->
+      <form id="donorForm" class="register-form active" onsubmit="handleSignup(event, 'donor')">
+        <h3>Register Your Business</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Business Name *</label>
+            <input type="text" placeholder="e.g. Sharma's Dhaba" required />
+          </div>
+          <div class="form-group">
+            <label>Owner Name *</label>
+            <input type="text" placeholder="Your full name" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="you@business.com" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Business Type *</label>
+            <select required>
+              <option value="">Select type</option>
+              <option>Restaurant</option>
+              <option>Café</option>
+              <option>Hostel / Canteen</option>
+              <option>Bakery</option>
+              <option>Hotel</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Area in Pune *</label>
+            <input type="text" placeholder="e.g. Kothrud, Wakad" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Full Address</label>
+          <textarea placeholder="Street address, landmark..." rows="2"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Password *</label>
+          <input type="password" placeholder="Create a password (min 8 chars)" minlength="8" required />
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="terms-donor" required />
+          <label for="terms-donor">I agree to the <a href="#">Terms of Service</a> and <a href="#">Food Safety Guidelines</a></label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-full">Create Donor Account – ₹499/month</button>
+        <p class="form-note">Already have an account? <a href="#login" onclick="showLogin()">Log in</a></p>
+      </form>
+
+      <!-- NGO / Volunteer Form -->
+      <form id="ngoForm" class="register-form" onsubmit="handleSignup(event, 'ngo')">
+        <h3>Register as NGO / Volunteer</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name / NGO Name *</label>
+            <input type="text" placeholder="Your name or organisation" required />
+          </div>
+          <div class="form-group">
+            <label>Type *</label>
+            <select required>
+              <option value="">Select</option>
+              <option>NGO / Organisation</option>
+              <option>Individual Volunteer</option>
+              <option>Community Group</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="you@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="+91 XXXXX XXXXX" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Area in Pune You Serve *</label>
+          <input type="text" placeholder="e.g. Hadapsar, Shivajinagar" required />
+        </div>
+        <div class="form-group">
+          <label>Password *</label>
+          <input type="password" placeholder="Create a password (min 8 chars)" minlength="8" required />
+        </div>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="terms-ngo" required />
+          <label for="terms-ngo">I agree to the <a href="#">Terms of Service</a> and <a href="#">Food Safety Guidelines</a></label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-full">Join Free – It's 100% Free</button>
+        <p class="form-note">Already have an account? <a href="#login" onclick="showLogin()">Log in</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =========== LOGIN MODAL =========== -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <button class="modal-close" onclick="hideLogin()">✕</button>
+    <div class="modal-logo">🍱 FoodRescue</div>
+    <h2>Welcome Back</h2>
+    <p>Log in to your FoodRescue account</p>
+    <form onsubmit="handleLogin(event)">
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="you@email.com" required />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" placeholder="Your password" required />
+      </div>
+      <div class="form-row-space">
+        <label class="checkbox-inline"><input type="checkbox" /> Remember me</label>
+        <a href="#" class="text-link">Forgot password?</a>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg btn-full">Log In</button>
+    </form>
+    <p class="form-note">Don't have an account? <a href="#register" onclick="hideLogin()">Sign up here</a></p>
+  </div>
+</div>
+
+<!-- =========== TEAM =========== -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-green">The Team</span>
+      <h2>Meet the Founders</h2>
+      <p>Students from MIT Academy of Engineering, Pune — passionate about technology and social impact.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">HI</div>
+        <h3>Homesh Ingle</h3>
+        <div class="team-role">Founder &amp; CEO</div>
+        <div class="team-college">MIT Academy of Engineering</div>
+        <p>Computer Science · Digital Marketing</p>
+        <div class="team-tags">
+          <span class="tag">Digital Marketing</span>
+          <span class="tag">Strategy</span>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">RS</div>
+        <h3>Rahul Sonone</h3>
+        <div class="team-role">App Development</div>
+        <div class="team-college">MIT Academy of Engineering</div>
+        <p>Computer Science · Product Design</p>
+        <div class="team-tags">
+          <span class="tag">Product Design</span>
+          <span class="tag">Development</span>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">AM</div>
+        <h3>Ashish Mehasare</h3>
+        <div class="team-role">Operations</div>
+        <div class="team-college">MIT Academy of Engineering</div>
+        <p>Computer Engineering · Financial Planning</p>
+        <div class="team-tags">
+          <span class="tag">Operations</span>
+          <span class="tag">Finance</span>
+        </div>
+      </div>
+    </div>
+    <div class="mentor-banner">
+      <span class="mentor-icon">🎓</span>
+      <div>
+        <strong>Mentor: Pradhan Sir</strong>
+        <p>Seeking mentors in business strategy and sustainable business model development</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== CONTACT =========== -->
+<section class="section section-dark" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="badge badge-orange">Get in Touch</span>
+      <h2>Contact FoodRescue</h2>
+      <p>Have a question or want to partner with us? We'd love to hear from you.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <div>
+            <strong>Location</strong>
+            <p>Pune, Maharashtra, India</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <p>hello@foodrescue.in</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <div>
+            <strong>Social Media</strong>
+            <p>Follow us on Instagram for food rescue stories</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">💬</span>
+          <div>
+            <strong>WhatsApp</strong>
+            <p>Join our NGO & volunteer WhatsApp groups</p>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleContact(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Full name" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="you@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select>
+            <option>Partnership Inquiry</option>
+            <option>Volunteer to Join</option>
+            <option>NGO Registration</option>
+            <option>Media / Press</option>
+            <option>General Query</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us how we can help..." rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-full">Send Message 📨</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =========== FOOTER =========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <span class="logo-icon">🍱</span>
+          <span class="logo-text">FoodRescue</span>
+        </div>
+        <p>Reducing food waste and hunger in Pune — one rescue at a time.</p>
+        <div class="social-links">
+          <a href="#" class="social-btn">📸 Instagram</a>
+          <a href="#" class="social-btn">💬 WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#register">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Food Safety</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 FoodRescue. All rights reserved. Made with 💚 in Pune.</p>
+      <p>MIT Academy of Engineering | Homesh Ingle · Rahul Sonone · Ashish Mehasare</p>
+    </div>
+  </div>
+</footer>
+
+<!-- =========== TOAST NOTIFICATION =========== -->
+<div class="toast" id="toast"></div>
+
+<!-- =========== BACK TO TOP =========== -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script src="app.js"></script>
+</body>
+</html>
+
